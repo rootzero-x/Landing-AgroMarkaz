@@ -5,9 +5,10 @@ import AIPlannerModal from './AIPlannerModal';
 
 interface NavbarProps {
   onNavigateFeatures: () => void;
+  onNavigateFounders: () => void;
 }
 
-export default function Navbar({ onNavigateFeatures }: NavbarProps) {
+export default function Navbar({ onNavigateFeatures, onNavigateFounders }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
 
@@ -42,6 +43,12 @@ export default function Navbar({ onNavigateFeatures }: NavbarProps) {
                 className="text-gray-600 hover:text-primary-600 font-medium transition-colors"
               >
                 Afzalliklar
+              </button>
+              <button 
+                onClick={onNavigateFounders}
+                className="text-gray-600 hover:text-primary-600 font-medium transition-colors"
+              >
+                Founderlar
               </button>
               <button
                 onClick={goToAI}
@@ -87,6 +94,12 @@ export default function Navbar({ onNavigateFeatures }: NavbarProps) {
                   className="w-full text-left block px-3 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
                 >
                   Afzalliklar
+                </button>
+                <button 
+                  onClick={() => { setIsOpen(false); onNavigateFounders(); }} 
+                  className="w-full text-left block px-3 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
+                >
+                  Founderlar
                 </button>
                 <button
                   onClick={goToAI}
