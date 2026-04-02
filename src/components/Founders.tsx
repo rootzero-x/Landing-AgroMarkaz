@@ -16,7 +16,7 @@ const foundersData = [
     name: "Khayrullayevich Oyatullokh",
     role: "Founder & Tech Architect",
     image: "/IMG_1378.png",
-    description: "DevOps, Xavfsizlik va FrontEnd texnologiyalari bo'yicha yuqori malakali mutaxassis, 6 yillik tajribaga ega.",
+    description: "DevOps, Cyber Security Backend Database va FrontEnd texnologiyalari bo'yicha yuqori malakali mutaxassis, 6 yillik tajribaga ega.",
     email: "rootzero.xz@gmail.com",
     website: "https://cybernexus.uz",
     stats: "DevOps & Security"
